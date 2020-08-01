@@ -1,0 +1,34 @@
+{
+    "name": "linlancer/workerman-callback",
+    "description": "base on workerman using reverse proxy to callback in multi-development environment",
+    "type": "project",
+    "require": {
+        "workerman/workerman": "4.*",
+        "php-parallel-lint/php-console-color": "^0.3.0",
+        "symfony/dotenv": "^5.1",
+        "symfony/config": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linsen",
+            "email": "3003286703@qq.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Linlancer\\Workerman\\Callback\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

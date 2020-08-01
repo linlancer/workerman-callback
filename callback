@@ -1,0 +1,13 @@
+#!/usr/bin/env -S-P/usr/local/bin:/usr/bin:${PATH} php
+<?php
+require_once __dir__.'/vendor/autoload.php';
+
+use Linlancer\Workerman\Callback\Workerman\WorkermanRunner;
+
+define('SRC_PATH', __DIR__.'src/');
+define('APP_PATH', __DIR__);
+
+WorkermanRunner::run();
+
+
+
